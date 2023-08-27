@@ -5,8 +5,9 @@ This repository contains code and data for an ERT (Electrical Resistivity Tomogr
 ## Table of Contents
 
 - Introduction
+- Forward Modelling
 - Data Collection and Processing
-- Modelling and Inversion
+- Inversion
 - Results and Discussion
 - Conclusion and Future Work
 - References
