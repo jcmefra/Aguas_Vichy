@@ -5,6 +5,7 @@ __pycache__/
 *$py.class
 .dat
 .html
+.png
 
 # C extensions
 *.so
