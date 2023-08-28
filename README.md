@@ -44,7 +44,7 @@ The PyGIMLi library provided a powerful framework for implementing the forward m
 
 **NOTE**: You can find the forward modelling code and results in **"Modelling_complex.ipynb"** notebook, there's also a simple model to compare the results. You can run the script on a PyGimli environment (see https://www.pygimli.org for more information).
 
-![Forward Modelling](Synth_data_inv.png)
+![Synth_data_inv](https://github.com/jcmefra/Aguas_Vichy/assets/64992303/0bd8afd8-7380-48ae-b9e7-02498b9c5d68)
 
 ## Data Collection and Processing
 
