@@ -42,7 +42,7 @@ The forward modelling process allowed the generation of synthetic ERT data that 
 
 The PyGIMLi library provided a powerful framework for implementing the forward modelling process, enabling accurate simulations of ERT data in complex geological settings.
 
-**NOTE**: You can find the forward modelling code and results in "Modelling_complex.ipynb" file, there's also a simple model to compare the results. You can run the script on a PyGimli environment (see https://www.pygimli.org for more information).
+**NOTE**: You can find the forward modelling code and results in **"Modelling_complex.ipynb"** notebook and **"Synth_data_inv.png"**, there's also a simple model to compare the results. You can run the script on a PyGimli environment (see https://www.pygimli.org for more information).
 
 ## Data Collection and Processing
 
