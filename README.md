@@ -4,34 +4,62 @@ This repository contains code and data for an ERT (Electrical Resistivity Tomogr
 
 ## Table of Contents
 
-- Introduction
-- Forward Modelling
-- Data Collection and Processing
-- Inversion
-- Results and Discussion
-- Conclusion and Future Work
-- References
+- [Abstract](#abstract)
+- [Forward Modelling](#forward-modelling)
+- [Data Collection and Processing](#data-collection-and-processing)
+- [Inversion](#inversion)
+- [Results and Discussion](#results-and-discussion)
+- [Conclusion and Future Work](#conclusion-and-future-work)
+- [References](#references)
 
-## Introduction
+## Abstract
 
-In this section, I will provide some background information about the hot spring, the geology of the area, the motivation and objectives of the project, and the main research questions.
+- The Aguas de Vichy thermal spring (SAN-001), located near San Andres, Santander, has geothermal potential with known temperature, stored heat, and geochemistry. The spring's thermal waters are sodium-chloride type with notable salt concentrations. The region has significant faulting and folding trends.
+
+- A fault near the spring site marks the contact between Paleozoic and Cretaceous sedimentary units. The Colombian Geological Survey suggests that the spring's water, salinized and heated by deep infiltration, rises due to temperature differences. Using techniques like ERT and VES, the geothermal fluid's distribution and mechanisms can be studied. 
+
+- These findings will enhance understanding of the geothermal system and encourage geothermal energy exploration in Santander.
+
+## Forward Modelling
+
+The forward modelling process involves simulating electrical resistivity tomography (ERT) data based on the given subsurface geometry and resistivity distribution. This process enables the generation of synthetic data that can be compared with actual measurements. In this project, the forward modelling of ERT data for the Aguas de Vichy hot spring was conducted using the PyGIMLi library.
+
+The key steps in the forward modelling process are as follows:
+
+1. **Geometry Definition:** The subsurface geometry was defined using a combination of layers representing different rock formations, faults, and plume structures. The geometry was constructed to mimic the geological features present near the hot spring location.
+
+2. **Measuring Scheme:** A Schlumberger measuring scheme with 96 electrodes was created along a 700-meter line. Electrode positions were carefully distributed to ensure sufficient mesh refinement and accuracy. The measuring scheme defined how measurements would be taken across the subsurface.
+
+3. **Mesh Generation:** A mesh was generated based on the defined geometry and electrode positions. The mesh quality was controlled to ensure accurate numerical results. Nodes were added to enforce mesh refinement and improve accuracy.
+
+4. **Resistivity Distribution:** Different resistivity values were assigned to various regions within the mesh. These values represented different rock formations and plume structures present in the subsurface. The resistivity values were used to simulate the conductivity variations in the forward modelling process.
+
+5. **Simulation:** Using the defined geometry, measuring scheme, and resistivity distribution, synthetic ERT data was generated. The forward simulation process considered factors such as geometric factors and noise levels. The resulting data container contained apparent resistivity values, geometric factors, and estimated data errors.
+
+6. **Data Filtering:** To ensure the quality of the synthetic data, negative data values resulting from noise were removed from the data container. Filtering ensured that only physically meaningful data points were used for further analysis.
+
+The forward modelling process allowed the generation of synthetic ERT data that closely resembled real-world measurements. This synthetic data serves as a foundation for subsequent inversion processes, where the goal is to reconstruct the subsurface resistivity distribution based on the measured data.
+
+The PyGIMLi library provided a powerful framework for implementing the forward modelling process, enabling accurate simulations of ERT data in complex geological settings.
+
+You can find the forward modelling code as "Modelling_complex.ipynb", also there's a simple model to compare the results. You can run the script on a PyGimli environment (see https://www.pygimli.org for more information).
 
 ## Data Collection and Processing
 
-In this section, I will describe how I collected and processed the ERT data. I will mention the equipment, the survey design, the data quality control, and the software tools that I used.
+I will describe how I collected and processed the ERT data. I will mention the equipment, the survey design, the data quality control, and the software tools that I used.
 
-## Modelling and Inversion
+## Inversion
 
-In this section, I will explain how I performed the ERT modelling and inversion. I will mention the forward and inverse models, the parameters, the optimization methods, and the error analysis that I used.
+In this section, I will explain how I performed the ERT inversion to reconstruct subsurface properties from the collected data. I will mention the inverse problem, regularization techniques, parameter selection, and optimization methods used in the inversion process.
 
 ## Results and Discussion
 
-In this section, I will present and discuss the results of my ERT modelling and inversion. I will use figures, tables, and graphs to illustrate my findings. I will also compare my results with previous studies or other methods.
+I will present and discuss the results of my ERT modelling and inversion. I will use figures, tables, and graphs to illustrate my findings. I will also compare my results with previous studies or other methods.
 
 ## Conclusion and Future Work
 
-In this section, I will summarize my main findings, conclusions, and contributions of the project. I will also suggest some limitations, challenges, and directions for future work.
+I will summarize my main findings, conclusions, and contributions of the project. I will also suggest some limitations, challenges, and directions for future work.
 
 ## References
 
-In this section, I will list the references that I cited in my README.md file. I will use any citation style that I prefer.
+I will list the references that I cited in my README.md file using any citation style that I prefer.
