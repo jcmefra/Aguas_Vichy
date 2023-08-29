@@ -24,7 +24,7 @@ This repository contains code and data for an ERT (Electrical Resistivity Tomogr
 
 The forward modelling process involves simulating electrical resistivity tomography (ERT) data based on the given subsurface geometry and resistivity distribution. This process enables the generation of synthetic data that can be compared with actual measurements. In this project, the forward modelling of ERT data for the Aguas de Vichy hot spring was conducted using the PyGIMLi library.
 
-![Synth_data_inv](https://github.com/jcmefra/Aguas_Vichy/assets/64992303/0bd8afd8-7380-48ae-b9e7-02498b9c5d68)
+![inversion_pseudosection](https://github.com/jcmefra/Aguas_Vichy/assets/64992303/c16510f2-18ec-4125-a051-bbce786f3595)
 
 The key steps in the forward modelling process are as follows:
 
