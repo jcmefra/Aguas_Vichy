@@ -22,11 +22,24 @@ This repository contains code and data for an ERT (Electrical Resistivity Tomogr
 
 ## Forward Modelling
 
-The forward modelling process involves simulating electrical resistivity tomography (ERT) data based on the given subsurface geometry and resistivity distribution. This process enables the generation of synthetic data that can be compared with actual measurements. In this project, the forward modelling of ERT data for the Aguas de Vichy hot spring was conducted using the PyGIMLi library.
+The forward modelling process involves simulating electrical resistivity tomography (ERT) data based on the given subsurface geometry and resistivity distribution. This process enables the generation of synthetic data that can be compared with actual measurements. In this project we did two forward modelling codes:
 
-![inversion_pseudosection](https://github.com/jcmefra/Aguas_Vichy/assets/64992303/c16510f2-18ec-4125-a051-bbce786f3595)
+- A simple one, using just some plain shapes and easy approaches to the geologic bodies.
 
-The key steps in the forward modelling process are as follows:
+![image](https://github.com/jcmefra/Aguas_Vichy/assets/64992303/512cba31-2355-4ec9-be70-3ab360f080ea)
+![image](https://github.com/jcmefra/Aguas_Vichy/assets/64992303/878e2b34-7c76-4319-a142-220598bd9244)
+![image](https://github.com/jcmefra/Aguas_Vichy/assets/64992303/38c28379-e33e-4ba5-926f-a35ce5dc2b43)
+
+
+- A complex one, defining a more precise geometry and a diffusive fluid to represent the geothermal plume (hot water infiltration into the aquifer), the inversion was refined too.
+
+![image](https://github.com/jcmefra/Aguas_Vichy/assets/64992303/504c723e-055c-4c6e-bcae-c667d4aed9c4)
+![image](https://github.com/jcmefra/Aguas_Vichy/assets/64992303/813e24c4-b323-40f5-8e4c-85fac0c7a28f)
+![image](https://github.com/jcmefra/Aguas_Vichy/assets/64992303/bfca50ff-2218-442e-a7b9-f84777e6ce1a)
+
+**NOTE**: You can find the forward modelling code and results in **"Modelling_complex.ipynb"** notebook, there's also the simple model to compare the results. You can run the script on a PyGimli environment (see https://www.pygimli.org for more information).
+
+### The key steps in the forward modelling process are as follows:
 
 1. **Geometry Definition:** The subsurface geometry was defined using a combination of layers representing different rock formations, faults, and plume structures. The geometry was constructed to mimic the geological features present near the hot spring location.
 
@@ -34,17 +47,19 @@ The key steps in the forward modelling process are as follows:
 
 3. **Mesh Generation:** A mesh was generated based on the defined geometry and electrode positions. The mesh quality was controlled to ensure accurate numerical results. Nodes were added to enforce mesh refinement and improve accuracy.
 
-4. **Resistivity Distribution:** Different resistivity values were assigned to various regions within the mesh. These values represented different rock formations and plume structures present in the subsurface. The resistivity values were used to simulate the conductivity variations in the forward modelling process.
+4. **Fluid simulation:**: An inyected diffusive fluid was simulated for the complex model, it has an injection point (fault) and also values of concentration. 
 
-5. **Simulation:** Using the defined geometry, measuring scheme, and resistivity distribution, synthetic ERT data was generated. The forward simulation process considered factors such as geometric factors and noise levels. The resulting data container contained apparent resistivity values, geometric factors, and estimated data errors.
+5. **Resistivity Distribution:** Different resistivity values were assigned to various regions within the mesh. These values represented different rock formations and plume structures present in the subsurface. The resistivity values were used to simulate the conductivity variations in the forward modelling process.
 
-6. **Data Filtering:** To ensure the quality of the synthetic data, negative data values resulting from noise were removed from the data container. Filtering ensured that only physically meaningful data points were used for further analysis.
+6. **Fluid Resistivity Definition:** The fluid resistivity was defined as a linear functon of the concentration, see the notebook for more details. 
+
+7. **Simulation:** Using the defined geometry, measuring scheme, and resistivity distribution, synthetic ERT data was generated. The forward simulation process considered factors such as geometric factors and noise levels. The resulting data container contained apparent resistivity values, geometric factors, and estimated data errors.
+
+8. **Data Filtering:** To ensure the quality of the synthetic data, negative data values resulting from noise were removed from the data container. Filtering ensured that only physically meaningful data points were used for further analysis.
 
 The forward modelling process allowed the generation of synthetic ERT data that closely resembled real-world measurements. This synthetic data serves as a foundation for subsequent inversion processes, where the goal is to reconstruct the subsurface resistivity distribution based on the measured data.
 
 The PyGIMLi library provided a powerful framework for implementing the forward modelling process, enabling accurate simulations of ERT data in complex geological settings.
-
-**NOTE**: You can find the forward modelling code and results in **"Modelling_complex.ipynb"** notebook, there's also a simple model to compare the results. You can run the script on a PyGimli environment (see https://www.pygimli.org for more information).
 
 ## Data Collection and Processing
 
