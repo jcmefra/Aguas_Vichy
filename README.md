@@ -49,7 +49,7 @@ The forward modelling process involves simulating electrical resistivity tomogra
 
 5. **Resistivity Distribution:** Different resistivity values were assigned to various regions within the mesh. These values represented different rock formations and plume structures present in the subsurface. The resistivity values were used to simulate the conductivity variations in the forward modelling process.
 
-6. **Fluid Resistivity Definition:** The fluid resistivity was defined as a linear functon of the concentration, see the notebook for more details. 
+6. **Fluid Resistivity Definition:** The fluid resistivity was defined as a linear function of the concentration, see the notebook for more details. 
 
 7. **Simulation:** Using the defined geometry, measuring scheme, and resistivity distribution, synthetic ERT data was generated. The forward simulation process considered factors such as geometric factors and noise levels. The resulting data container contained apparent resistivity values, geometric factors, and estimated data errors.
 
