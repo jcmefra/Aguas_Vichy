@@ -7,25 +7,27 @@ import pygimli as pg
 import pygimli.meshtools as mt
 from pygimli.physics import ert
 
-world = mt.createWorld(start=(-350, -250), end=(350, 0))
+world = mt.createWorld(start=(-150, -100), end=(150, 0))
 
-iPos = (-80, -50) #Inyection Point
-fault = mt.createPolygon([iPos, (-145, -250)], isClosed= True)
+iPos = (-35, -40) #Inyection Point
+iPos2 = (35, -40) #Inyection Point 2
+fault = mt.createPolygon([iPos, (-80, -250)], isClosed= True)
 
-layer = mt.createPolygon([(-100, -0), iPos, (50, -50), (100, -0)], 
+layer = mt.createPolygon([(-100, 0), iPos, iPos2, (100, 0)], 
                          addNodes=50, interpolate='spline', isClosed=False)
 
 world += layer
 world += fault
 
-world.addRegionMarker((0, -5), marker=1)
-world.addRegionMarker((-300, -200), marker=2)
-world.addRegionMarker((300, -200), marker=3)
+world.addRegionMarker((-10, -5), marker=1)
+world.addRegionMarker((-100, -100), marker=2)
+world.addRegionMarker((100, -100), marker=3)
 
 pg.show(world, markers=True, showNodes=True)
 
+
 # Sensors should no be on the corner so we put them a little inside
-scheme = ert.createData(elecs=np.linspace(start=-100, stop=100, num=64),
+scheme = ert.createData(elecs=np.linspace(start=-125, stop=125, num=64),
                            schemeName='slm')
 
 # we need local refinement at the electrodes to achieve sufficient accuracy
@@ -35,7 +37,7 @@ for p in scheme.sensors():
 
 mesh = mt.createMesh(world)
 
-mesh = mt.appendTriangleBoundary(mesh, xbound=200, ybound=200, marker=4)
+mesh = mt.appendTriangleBoundary(mesh, xbound=100, ybound=50, marker=4)
 
 pg.show(mesh, markers=True, showMesh=True)
 
@@ -55,17 +57,18 @@ data = ert.simulate(mesh, scheme=scheme, res=rho0,
 pg.show(data)
 
 #Anisotropic flow
-diff = pg.solver.cellValues(mesh, {'3,2,4': pg.solver.createAnisotropyMatrix(0.1, 0.1, 0.0), 1: pg.solver.createAnisotropyMatrix(1, 100, 20.0*np.pi/180)}) 
+#diff = pg.solver.cellValues(mesh, {'3,2,4': pg.solver.createAnisotropyMatrix(0.1, 0.1, 0.0), 1: pg.solver.createAnisotropyMatrix(10, 100, 20.0*np.pi/180)}) 
 
 #Isotropic and homogeneous flow
-#diff = pg.solver.cellValues(mesh, {4: 1e-2, 3: 1e-2, 2: 1e-2, 1: 100}) 
+diff = pg.solver.cellValues(mesh, {4: 1e-2, 3: 1e-2, 2: 1e-2, 1: 100}) 
 
 iPosID = mesh.findNearestNode(iPos)
+iPosID2 = mesh.findNearestNode(iPos2)
 
 # stationary solution 
 Conc = pg.solver.solve(mesh, a=diff,
                     bc={'Dirichlet': {'-1': 0.0}, 'Neumann': {'-2': -1},
-                        'Node':[iPosID, 100]}, verbose=True)
+                        'Node':[[iPosID, 100], [iPosID2, 100]]}, verbose=True)
 
 pg.show(mesh, Conc, label='concentration', showMesh=True, 
         cMin=0, cMax=100, nCols=10, nLevs=11, linewidths=0.5)
