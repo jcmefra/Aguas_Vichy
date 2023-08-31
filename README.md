@@ -24,7 +24,7 @@ This repository contains code and data for an ERT (Electrical Resistivity Tomogr
 
 The forward modelling process involves simulating electrical resistivity tomography (ERT) data based on the given subsurface geometry and resistivity distribution. This process enables the generation of synthetic data that can be compared with actual measurements.
 
-![image](https://github.com/jcmefra/Aguas_Vichy/assets/64992303/1450be8a-9fb3-4f1c-90d4-6bfde5633dab)
+![image](https://github.com/jcmefra/Aguas_Vichy/assets/64992303/36b2c119-a508-41fc-81d7-857a33b5ed95)
 
 ### The key steps in the forward modelling process are as follows:
 
