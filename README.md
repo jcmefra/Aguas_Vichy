@@ -24,7 +24,7 @@ This repository contains code and data for an ERT (Electrical Resistivity Tomogr
 
 The forward modelling process involves simulating electrical resistivity tomography (ERT) data based on the given subsurface geometry and resistivity distribution. This process enables the generation of synthetic data that can be compared with actual measurements.
 
-To our final modelling code we defined a more precise geometry scheme and a diffusing fluid to represent the geothermal plume (hot water infiltration into the aquifer), the inversion was refined too. There are 2 options to model the diffusing fluid: Isotropic and anisotropic behavior.
+For the final modelling code we defined a more precise geometry scheme and a diffusing fluid to represent the geothermal plume (hot water infiltration into the aquifer), the inversion was refined too. There are 2 options to model the diffusing fluid: Isotropic and anisotropic behavior.
 
 ![image](https://github.com/jcmefra/Aguas_Vichy/assets/64992303/1450be8a-9fb3-4f1c-90d4-6bfde5633dab)
 
