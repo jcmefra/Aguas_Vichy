@@ -22,20 +22,16 @@ This repository contains code and data for an ERT (Electrical Resistivity Tomogr
 
 ## Forward Modelling
 
-The forward modelling process involves simulating electrical resistivity tomography (ERT) data based on the given subsurface geometry and resistivity distribution. This process enables the generation of synthetic data that can be compared with actual measurements. In this project we did two forward modelling codes:
+The forward modelling process involves simulating electrical resistivity tomography (ERT) data based on the given subsurface geometry and resistivity distribution. This process enables the generation of synthetic data that can be compared with actual measurements.
 
-- A complex one, defining a more precise geometry and a diffusive fluid to represent the geothermal plume (hot water infiltration into the aquifer), the inversion was refined too.
+To our final modelling code we defined a more precise geometry scheme and a diffusing fluid to represent the geothermal plume (hot water infiltration into the aquifer), the inversion was refined too. There are 2 options to model the diffusing fluid: Isotropic and anisotropic behavior.
 
 ![image](https://github.com/jcmefra/Aguas_Vichy/assets/64992303/504c723e-055c-4c6e-bcae-c667d4aed9c4)
 ![image](https://github.com/jcmefra/Aguas_Vichy/assets/64992303/813e24c4-b323-40f5-8e4c-85fac0c7a28f)
 ![image](https://github.com/jcmefra/Aguas_Vichy/assets/64992303/bfca50ff-2218-442e-a7b9-f84777e6ce1a)
 
-- A simple one, using just some plain shapes and easy approaches to the geologic bodies.
+**NOTE**: You can find the forward modelling base code in **"Modelling_complex.ipynb"** notebook, we are using **Modelling_scenarios.py** to try different posible geological scenarios and define what acquisition will we do. You can run the script on a PyGimli environment (see https://www.pygimli.org for more information).
 
-![image](https://github.com/jcmefra/Aguas_Vichy/assets/64992303/512cba31-2355-4ec9-be70-3ab360f080ea)
-![image](https://github.com/jcmefra/Aguas_Vichy/assets/64992303/38c28379-e33e-4ba5-926f-a35ce5dc2b43)
-
-**NOTE**: You can find the forward modelling code and results in **"Modelling_complex.ipynb"** notebook, there's also the simple model to compare the results. You can run the script on a PyGimli environment (see https://www.pygimli.org for more information).
 
 ### The key steps in the forward modelling process are as follows:
 
