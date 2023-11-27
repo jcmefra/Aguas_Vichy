@@ -4,8 +4,13 @@ __pycache__/
 *.py[cod]
 *$py.class
 .dat
-.html
-.png
+*.html
+*.png
+*.INV
+*.vector
+*.bms
+*.vtk
+*.vec
 
 # C extensions
 *.so
