@@ -1,0 +1,202 @@
+Copyright:  ZZ Resistivity Imaging Pty Ltd -------- www.zzgeo.com
+Electrode checking results:
+    
+Format:  electrode no.;    Current_value;     Resistant value;       Good/Bad/Unused
+ 2             electrode checkings are completed
+************ Electrode checking            1 
+ 1            Common electrode no.:        1 
+ 1             1            -1            -1               Unused
+ 1             2             0.02607031    1380.881        Good
+ 1             3             0.03508594    1026.052        Good
+ 1             4             0.03298437    1091.426        Good
+ 1             5             0.0341901     1052.936        Good
+ 1             6             0.02073437    1736.247        Good
+ 1             7             0.02116406    1700.997        Good
+ 1             8             0.04013541    896.9635        Good
+ 1             9             0.03374739    1066.749        Good
+ 1             10            0.03310156    1087.562        Good
+ 1             11            0.04017708    896.0331        Good
+ 1             12            0.0337526     1066.584        Good
+ 1             13            0.03496094    1029.721        Good
+ 1             14            0.03388802    1062.322        Good
+ 1             15            0.0354375     1015.873        Good
+ 1             16            0.02780729    1294.625        Good
+ 1             17            0.02461718    1462.393        Good
+ 1             18            0.03294531    1092.72         Good
+ 1             19            0.03057813    1177.312        Good
+ 1             20            0.03278646    1098.014        Good
+ 1             21            0.0395026     911.3324        Good
+ 1             22            0.03555208    1012.599        Good
+ 1             23            0.02784375    1292.929        Good
+ 1             24            0.03473958    1036.282        Good
+ 1             25            0.03464323    1039.164        Good
+ 1             26            0.02939062    1224.88         Good
+ 1             27            0.03739844    962.6071        Good
+ 1             28            0.04052865    888.2606        Good
+ 1             29            0.02783334    1293.413        Good
+ 1             30            0.03391927    1061.344        Good
+ 1             31            0.02476042    1453.934        Good
+ 1             32            0.02851302    1262.581        Good
+ 1             33           -1            -1               Unused
+ 1             34           -1            -1               Unused
+ 1             35           -1            -1               Unused
+ 1             36           -1            -1               Unused
+ 1             37           -1            -1               Unused
+ 1             38           -1            -1               Unused
+ 1             39           -1            -1               Unused
+ 1             40           -1            -1               Unused
+ 1             41           -1            -1               Unused
+ 1             42           -1            -1               Unused
+ 1             43           -1            -1               Unused
+ 1             44           -1            -1               Unused
+ 1             45           -1            -1               Unused
+ 1             46           -1            -1               Unused
+ 1             47           -1            -1               Unused
+ 1             48           -1            -1               Unused
+ 1             49           -1            -1               Unused
+ 1             50           -1            -1               Unused
+ 1             51           -1            -1               Unused
+ 1             52           -1            -1               Unused
+ 1             53           -1            -1               Unused
+ 1             54           -1            -1               Unused
+ 1             55           -1            -1               Unused
+ 1             56           -1            -1               Unused
+ 1             57           -1            -1               Unused
+ 1             58           -1            -1               Unused
+ 1             59           -1            -1               Unused
+ 1             60           -1            -1               Unused
+ 1             61           -1            -1               Unused
+ 1             62           -1            -1               Unused
+ 1             63           -1            -1               Unused
+ 1             64           -1            -1               Unused
+ 1             65            0             99999          ********* BBBBad
+ 1             66            0.0005182291                69467.34        Good
+ 1             67            0             99999          ********* BBBBad
+ 1             68            0.0006015627                59844.14        Good
+ 1             69            0             99999          ********* BBBBad
+ 1             70            0.0007630209                47180.88        Good
+ 1             71            0             99999          ********* BBBBad
+ 1             72            0.00090625    39724.14        Good
+ 1             73            0.0005677085                63412.82        Good
+ 1             74            0             99999          ********* BBBBad
+ 1             75            0             99999          ********* BBBBad
+ 1             76            0             99999          ********* BBBBad
+ 1             77            0.0006406252                56195.11        Good
+ 1             78            0             99999          ********* BBBBad
+ 1             79            0             99999          ********* BBBBad
+ 1             80            0.0009401041                38293.63        Good
+ 1             81            0.0008046874                44737.87        Good
+ 1             82            0.0007135418                50452.54        Good
+ 1             83            0.0005364581                67106.83        Good
+ 1             84            0.0005755209                62552.04        Good
+ 1             85            0.0006380209                56424.48        Good
+ 1             86            0             99999          ********* BBBBad
+ 1             87            0.0007187499                50086.96        Good
+ 1             88            0.0007786457                46234.12        Good
+ 1             89            0.0006770834                53169.23        Good
+ 1             90            0             99999          ********* BBBBad
+ 1             91            0             99999          ********* BBBBad
+ 1             92            0.0005625     64000           Good
+ 1             93            0.0009661459                37261.45        Good
+ 1             94            0             99999          ********* BBBBad
+ 1             95            0             99999          ********* BBBBad
+ 1             96            0.0007369791                48848.06        Good
+************ Electrode checking            2 
+ 2            Common electrode no.:        1 
+ 2             1            -1            -1               Unused
+ 1             2             0.0261224     1378.128        Good
+ 1             3             0.03444792    1045.056        Good
+ 1             4             0.03300781    1090.651        Good
+ 1             5             0.03321094    1083.98         Good
+ 1             6             0.02067187    1741.497        Good
+ 1             7             0.020625      1745.454        Good
+ 1             8             0.03983073    903.8248        Good
+ 1             9             0.03393229    1060.936        Good
+ 1             10            0.03289323    1094.45         Good
+ 1             11            0.04069531    884.6228        Good
+ 1             12            0.03421354    1052.215        Good
+ 1             13            0.03566146    1009.493        Good
+ 1             14            0.03466666    1038.462        Good
+ 1             15            0.03505729    1026.891        Good
+ 1             16            0.02855469    1260.739        Good
+ 1             17            0.02482812    1449.969        Good
+ 1             18            0.0321875     1118.447        Good
+ 1             19            0.03111979    1156.82         Good
+ 1             20            0.03239062    1111.433        Good
+ 1             21            0.0395651     909.8928        Good
+ 1             22            0.03641146    988.6998        Good
+ 1             23            0.02828385    1272.811        Good
+ 1             24            0.03382031    1064.449        Good
+ 1             25            0.03477344    1035.273        Good
+ 1             26            0.02954948    1218.296        Good
+ 1             27            0.03769011    955.1578        Good
+ 1             28            0.04045051    889.9763        Good
+ 1             29            0.02766145    1301.45         Good
+ 1             30            0.03392448    1061.181        Good
+ 1             31            0.02422917    1485.813        Good
+ 1             32            0.02828646    1272.694        Good
+ 2             33           -1            -1               Unused
+ 2             34           -1            -1               Unused
+ 2             35           -1            -1               Unused
+ 2             36           -1            -1               Unused
+ 2             37           -1            -1               Unused
+ 2             38           -1            -1               Unused
+ 2             39           -1            -1               Unused
+ 2             40           -1            -1               Unused
+ 2             41           -1            -1               Unused
+ 2             42           -1            -1               Unused
+ 2             43           -1            -1               Unused
+ 2             44           -1            -1               Unused
+ 2             45           -1            -1               Unused
+ 2             46           -1            -1               Unused
+ 2             47           -1            -1               Unused
+ 2             48           -1            -1               Unused
+ 2             49           -1            -1               Unused
+ 2             50           -1            -1               Unused
+ 2             51           -1            -1               Unused
+ 2             52           -1            -1               Unused
+ 2             53           -1            -1               Unused
+ 2             54           -1            -1               Unused
+ 2             55           -1            -1               Unused
+ 2             56           -1            -1               Unused
+ 2             57           -1            -1               Unused
+ 2             58           -1            -1               Unused
+ 2             59           -1            -1               Unused
+ 2             60           -1            -1               Unused
+ 2             61           -1            -1               Unused
+ 2             62           -1            -1               Unused
+ 2             63           -1            -1               Unused
+ 2             64           -1            -1               Unused
+ 2             65           -1            -1               Unused
+ 2             66           -1            -1               Unused
+ 2             67           -1            -1               Unused
+ 2             68           -1            -1               Unused
+ 2             69           -1            -1               Unused
+ 2             70           -1            -1               Unused
+ 2             71           -1            -1               Unused
+ 2             72           -1            -1               Unused
+ 2             73           -1            -1               Unused
+ 2             74           -1            -1               Unused
+ 2             75           -1            -1               Unused
+ 2             76           -1            -1               Unused
+ 2             77           -1            -1               Unused
+ 2             78           -1            -1               Unused
+ 2             79           -1            -1               Unused
+ 2             80           -1            -1               Unused
+ 2             81           -1            -1               Unused
+ 2             82           -1            -1               Unused
+ 2             83           -1            -1               Unused
+ 2             84           -1            -1               Unused
+ 2             85           -1            -1               Unused
+ 2             86           -1            -1               Unused
+ 2             87           -1            -1               Unused
+ 2             88           -1            -1               Unused
+ 2             89           -1            -1               Unused
+ 2             90           -1            -1               Unused
+ 2             91           -1            -1               Unused
+ 2             92           -1            -1               Unused
+ 2             93           -1            -1               Unused
+ 2             94           -1            -1               Unused
+ 2             95           -1            -1               Unused
+ 2             96           -1            -1               Unused
+End of electrode check data.
