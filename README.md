@@ -50,20 +50,64 @@ The forward modelling process allowed the generation of synthetic ERT data that 
 
 ## Data Collection and Processing
 
-I will describe how I collected and processed the ERT data. I will mention the equipment, the survey design, the data quality control, and the software tools that I used.
+Forward modeling was employed to establish potential distribution of the resistivity and chargeability anomalies based on the initial hypothesis, subsequently, three Electrical Resistivity Tomography (ERT) transects around the fault map trace were conducted. Two of them were complemented by induced polarization (IP) method.
 
 ## Inversion
 
-In this section, I will explain how I performed the ERT inversion to reconstruct subsurface properties from the collected data. I will mention the inverse problem, regularization techniques, parameter selection, and optimization methods used in the inversion process.
+The inversion process has been done using PyGimli for Schlumberger array and Res2Dinv for mixed (robust) array. PyGimli robust inversion is yet to be available after data conversion.
 
 ## Results and Discussion
 
-I will present and discuss the results of my ERT modelling and inversion. I will use figures, tables, and graphs to illustrate my findings. I will also compare my results with previous studies or other methods.
+Two of the ERT transects traverse the fault and revealed resistivity values ranging from near zero to over 1500 ohm.m, with a similar distribution pattern. Low resistivity areas, possibly indicating accumulation of groundwater and geothermal saline fluids, were more pronounced adjacent to the inferred fault trace and at the profile's boundaries. High resistivity anomalies appear at 5 meters depth, defining a possible lower boundary of the quaternary aquifer, and are likely indicative of consolidated or impermeable materials. The third ERT, which was located within the aquifer but doesn’t intersect the fault, showed higher baseline resistivities suggesting a reduced presence of geothermal fluids. IP findings are in alignment with ERT results, where low chargeability suggests the presence of groundwater and geothermal saline fluids.
 
 ## Conclusion and Future Work
 
-I will summarize my main findings, conclusions, and contributions of the project. I will also suggest some limitations, challenges, and directions for future work.
+The inverted sections support the presence of a geothermal system dominated by fluid circulation, which may correlate to faults and fractures ; however, the studied fault trace did not show the expected anomaly for a main geothermal fluid path. We suggest that the following studies improve the geological and structural uncertaintity and contemplate other alternatives such as lateral (advective) fluid flow as the main geothermal water source for the thermal springs. The results obtained reveal a potential energy resource which requires further understanding and encourages continued research into geothermal energy within the Santander department. 
 
 ## References
 
-I will list the references that I cited in my README.md file using any citation style that I prefer.
+Alfaro Valero, C.M. and Ortiz Martín, I.D. (2010) Inventario nacional de manantiales termales fase 2010, departamento de Boyaca, Santander y Norte de Santander, Servicio Geológico Colombiano. Bogotá, Colombia: Instituto Colombiano de Geología y Minería (INGEOMINAS).
+
+Alfaro, C. M., Rueda Gutiérrez, J. B., Casallas Y. P., Rodríguez G. Z., y Malo J. E. (2020). Estimación Preliminar del Potencial Geotérmico de Colombia. Bogotá: Servicio Geológico Colombiano.
+
+Arnason, K., Karlsdottir, R., Eysteinsson, H., Flóvenz, Ó. G., \& Gudlaugsson, S. T. (2000, May). The resistivity structure of high-temperature geothermal systems in Iceland. In Proceedings of the World Geothermal Congress 2000, Kyushu-Tohoku, Japan (pp. 923-928).
+
+Bona, P., \& Coviello, M. (2016). Valoración y gobernanza de los proyectos geotérmicos en América del Sur: una propuesta metodológica.
+
+Bu, X., Ma, W., \& Li, H. (2012). Geothermal energy production utilizing abandoned oil and gas wells. Renewable energy, 41, 80-85.
+
+Chabaane, A., Redhaounia, B., \& Gabtni, H. (2017). Combined application of vertical electrical sounding and 2D electrical resistivity imaging for geothermal groundwater characterization: Hammam Sayala hot spring case study (NW Tunisia). Journal of African Earth Sciences, 134, 292-298.
+
+Chandrasekharam, D., \& Bundschuh, J. (2008). Low-enthalpy geothermal resources for power generation. CRC press.
+
+Dentith, M., \& Mudge, S. T. (2014). Geophysics for the mineral exploration geoscientist. Cambridge University Press.
+
+Dickson, M. H., \& Fanelli, M. (2013). Geothermal energy: utilization and technology.
+
+González-Idárraga, C. E. (2020). Caracterización resistiva 3D del área geotérmica de Paipa, Colombia. Boletín de Geología, 42(3), 81-97.
+
+Hunt, T. M., Bromley, C. J., Risk, G. F., Sherburn, S., \& Soengkono, S. (2009). Geophysical investigations of the Wairakei Field. Geothermics, 38(1), 85-97.
+
+International Geothermal Association (IGA). (2014). Best Practices Guide for Geothermal Exploration. IGA Service GmbH, Bochum Germany.
+
+Kana, J. D., Djongyang, N., Raïdandi, D., Nouck, P. N., \& Dadjé, A. (2015). A review of geophysical methods for geothermal exploration. Renewable and Sustainable Energy Reviews, 44, 87-95.
+
+Márquez, I. D., Puyo, D. M., Robledo, M. L., \& Valderrama, S. S. (2021). Transición energética: un legado para el presente y el futuro de Colombia. Bogotá DC, Colombia.
+
+Morales, E., Veroslavsky, G., Manganelli, A., Marmisolle, J., Pedro, A., Samaniego, L., Plenc, F., Umpiérrez, R., Ferreiro, M., \& Morales, M. (2021). Potential of geothermal energy in the onshore sedimentary basins of Uruguay. Geothermics, 95, 102165.
+
+Okoroafor, E. R., Smith, C. M., Ochie, K. I., Nwosu, C. J., Gudmundsdottir, H., \& Aljubran, M. J. (2022). Machine learning in subsurface geothermal energy: Two decades in review. Geothermics, 102, 102401.
+
+Ovalle, J. A. (2020). Geotermia en la región central. Convenio Interadministrativo 080 de 2019. Región Administrativa y de Planeación Especial RAP-E - Universidad Distrital Francisco José de Caldas.
+
+Pardo, O. H., \& Eraso, G. C. A. (2011). Caracterización geofísica integrada de las aguas termales de la hostería Balneario El Batán, municipio de Cuitiva, Boyacá, Colombia. Geología Colombiana, 36, 57-72.
+
+Pesce, A., \& Miranda, F. (2003). Catálogo de manifestaciones termales de la República Argentina. Vol. I-II Región Noroeste. SEGEMAR, Buenos Aires, 1666-3462.
+
+Romo-Jones, J. M., Arango-Galván, C., Ruiz-Aguilar, D., Avilés-Esquivel, T., \& Salas-Corrales, J. L. (2021, August). 3D electrical resistivity distribution in Los Humeros and Acoculco geothermal zones, Mexico. In First EAGE Workshop on Geothermal Energy in Latin America (Vol. 2021, No. 1, pp. 1-5). EAGE Publications BV.
+
+Spichak, V., \& Manzella, A. (2009). Electromagnetic sounding of geothermal zones. Journal of Applied Geophysics, 68(4), 459-478.
+
+Tian, B., Lei, X., Jiang, H., Xu, C., \& Song, M. (2022). Multi-Method Geophysical Mapping of a Geothermal Reservoir and Buried Channel in Langfang, Northern Part of China. Journal of Environmental and Engineering Geophysics, 27(1), 1-11.
+
+Zohdy, A. A., Eaton, G. P., \& Mabey, D. R. (1974). Application of surface geophysics to ground-water investigations.
