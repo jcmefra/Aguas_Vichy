@@ -60,6 +60,8 @@ The inversion process has been done using PyGimli for Schlumberger array and Res
 
 Two of the ERT transects traverse the fault and revealed resistivity values ranging from near zero to over 1500 ohm.m, with a similar distribution pattern. Low resistivity areas, possibly indicating accumulation of groundwater and geothermal saline fluids, were more pronounced adjacent to the inferred fault trace and at the profile's boundaries. High resistivity anomalies appear at 5 meters depth, defining a possible lower boundary of the quaternary aquifer, and are likely indicative of consolidated or impermeable materials. The third ERT, which was located within the aquifer but doesn’t intersect the fault, showed higher baseline resistivities suggesting a reduced presence of geothermal fluids. IP findings are in alignment with ERT results, where low chargeability suggests the presence of groundwater and geothermal saline fluids.
 
+**NOTE**: The results are not in this repository, they will be published once the citable paper is available.
+
 ## Conclusion and Future Work
 
 The inverted sections support the presence of a geothermal system dominated by fluid circulation, which may correlate to faults and fractures ; however, the studied fault trace did not show the expected anomaly for a main geothermal fluid path. We suggest that the following studies improve the geological and structural uncertaintity and contemplate other alternatives such as lateral (advective) fluid flow as the main geothermal water source for the thermal springs. The results obtained reveal a potential energy resource which requires further understanding and encourages continued research into geothermal energy within the Santander department. 
