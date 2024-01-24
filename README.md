@@ -54,7 +54,7 @@ Forward modeling was employed to establish potential distribution of the resisti
 
 ## Inversion
 
-The inversion process has been done using PyGimli for Schlumberger array and Res2Dinv for mixed (robust) array. PyGimli robust inversion is yet to be available after data conversion.
+The inversion process has been done using PyGimli for Schlumberger array and Res2Dinv for mixed (robust) array. PyGimli robust inversion is yet to be available after data conversion. Data analysis has been conducted to identify outliers and remove disperse values.
 
 ## Results and Discussion
 
